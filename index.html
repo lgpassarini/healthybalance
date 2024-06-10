@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>HealthBalance</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div id="logo">HealthBalance</div>
+                <i id="logo-icon" class="fa-solid fa-apple-whole"></i>
+            </div>
+
+            <div class="link-container">
+                <a href="https://www.linkedin.com/in/lgpassarini/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lgpassarini" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="main-section">
+
+        <video id="main-video" autoplay muted loop>
+            <source src="./img/home-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+
+        <div id="main-container">
+            <h3 class="title">Calculadora IMC</h3>
+
+            <div class="form-section">
+
+                <div class="input-section">
+                    <label for="heightTxt">Altura (cm)</label>
+                    <input class="input-imc" id="heightTxt" type="number" placeholder="0" min="0">
+                </div>
+                
+                <div class="input-section">
+                    <label for="weightTxt">Peso (Kg)</label>
+                    <input class="input-imc" id="weightTxt" type="number" placeholder="0" min="0">
+                </div>
+
+                <div class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Referências:</h3>
+                <ul>
+                    <li class="reference-item"><span>Menor que 18,5</span><i class="fa-solid fa-arrow-right"></i><span>Abaixo do Peso</span></li>
+                    <li class="reference-item"><span>Entre 18,5 e 24,9</span><i class="fa-solid fa-arrow-right"></i><span>Normal</span></li>
+                    <li class="reference-item"><span>Entre 25,0 e 29,9</span><i class="fa-solid fa-arrow-right"></i><span>Sobrepeso</span></li>
+                    <li class="reference-item"><span>Entre 30,0 e 39,9</span><i class="fa-solid fa-arrow-right"></i><span>Obesidade</span></li>
+                    <li class="reference-item"><span>Maior que 40</span><i class="fa-solid fa-arrow-right"></i><span>Obesidade Grave</span></li>
+                </ul>
+            </div>
+
+
+            <div class="result">
+                <span class="result-txt"></span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="warning-section">
+        <div class="warning-container">
+            <h1>"Uma alimentação <strong>equilibrada</strong> é essencial para alcançar e manter um peso saudável."</h1>
+            <span>Alimente-se bem, <strong>cuide</strong> do seu corpo e da sua mente. </span>
+        </div>
+    </section>
+
+    <section id="perfil-section">
+        <div class="perfil-container">
+
+            <div class="perfil-content">
+                <div class="perfil-presentation">
+                    <h3 id="perfil-title">Quem sou eu</h3>
+                    <img id="perfil-img" src="./img/leo.jpg" alt="">
+                    <span>Leonardo Passarini</span>
+                </div>
+
+                <div class="perfil-text">
+                    <div class="perfil-item">Sou Leonardo Passarini, um jovem de 23 anos apaixonado por tecnologia e estudante de Análise e Desenvolvimento de Sistemas na Instituição Cruzeiro do Sul.</div>
+                    <div class="perfil-item">O objetivo desse projeto é proporcionar às pessoas um meio eficaz de controlar e melhorar sua saúde, utilizando uma calculadora IMC que aplica as habilidades e técnicas adquiridas no ambiente acadêmico.</div>
+                    <div class="perfil-item">Este projeto representa não apenas um desafio pessoal, mas também uma oportunidade de contribuir para um estilo de vida mais saudável e equilibrado para todos.</div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
